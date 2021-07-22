@@ -19,7 +19,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <upstream.major.minor>14.31</upstream.major.minor>
-        <upstream.patch>44</upstream.patch>
+        <upstream.patch>45</upstream.patch>
         <upstream.version>${upstream.major.minor}.${upstream.patch}</upstream.version>
         <upstream.file>Jmol-${upstream.version}-binary.zip</upstream.file>
         <upstream.url>https://sourceforge.net/projects/jmol/files/Jmol/Version%20${upstream.major.minor}/Jmol%20${upstream.version}/${upstream.file}</upstream.url>
@@ -92,6 +92,7 @@
                                     <fileset dir="${project.build.directory}/jsmol">
                                         <include name="*.js" />
                                         <include name="j2s/**" />
+                                        <include name="idioma/**" />
                                     </fileset>
                                 </move>
                                 <move todir="${destDir}">
